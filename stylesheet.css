@@ -1,0 +1,93 @@
+body {
+ font-family: 'Yu Gothic UI',sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+    padding-top: 6rem;
+}
+
+.nav {
+    display: block;
+    position: fixed;
+    height: 100%;
+    padding-top: 6rem;
+    text-align: left;
+        border-right: 1px solid #e6e6fa;
+}
+
+.nav-item {
+  position: relative;
+  display: block;
+  text-decoration: none;
+    padding: 2px 32px 2px 0;
+    color: #404040;
+}
+.nav-item::after {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #333;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+.nav-item:hover::after {
+  bottom: 1px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.content {
+    margin-left: 20%;
+    color: #464646;
+}
+
+.emoji {
+ line-height: 1;
+}
+
+.poke_il_thum {
+    display: inline-block; /* https://support.sugutsukaeru.jp/ja/customize/homepage-design/247.html から */
+    height: 80px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.poke_il_thum img {
+    height: 100%;
+}
+
+.pokegi_thum {
+    display: inline-block; /* https://support.sugutsukaeru.jp/ja/customize/homepage-design/247.html から */
+    height: 80px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.pokegi_thum img {
+    height: 100%;
+}
+
+/*
+.header {
+  background-color: #26d0c9;
+  color: #fff;
+  height: 90px;
+}
+
+.header-logo {
+  float: left;
+  font-size: 36px;
+  padding: 20px 40px;
+}
+
+.header-list li {
+  float: left;
+  padding: 33px 20px;
+}
+*/
